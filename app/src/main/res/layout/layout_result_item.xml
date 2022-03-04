@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Pasta" />
+
+    <TextView
+        android:id="@+id/priceTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/foodName"
+        app:layout_constraintTop_toBottomOf="@id/foodName" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/priceTag"
+        app:layout_constraintTop_toTopOf="@id/priceTag"
+        tools:text="5" />
+
+
+    <TextView
+        android:id="@+id/providerTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provider: "
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/priceTag"
+        app:layout_constraintTop_toBottomOf="@id/priceTag" />
+
+    <TextView
+        android:id="@+id/provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/providerTag"
+        app:layout_constraintTop_toTopOf="@id/providerTag"
+        tools:text="CareemNOW" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
